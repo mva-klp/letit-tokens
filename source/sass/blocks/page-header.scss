@@ -1,0 +1,145 @@
+.page-header {
+  background-color: $color-white;
+}
+
+//добавляется джава скриптом при открытии detailes блоков в мобильной версии
+.page-header--fixed {
+  @media (max-width: $mobile-width-only) {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    left:0;
+    right:0;
+  }
+}
+
+.page-header__nav {
+    position: relative;
+  @media (min-width: $tablet-width) {
+    min-width: 708px;
+    min-height: 97px;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    width: 1780px;
+  }
+}
+
+.page-header__bar {
+  @media (max-width: $mobile-width-only) {
+    width: 430px;
+    margin: 0 auto;
+    padding: 12px 24px 11px;
+    display: grid;
+    grid-template-columns: 62px 1fr 62px;
+    gap: 16px;
+    align-items: center;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 100px;
+  }
+}
+
+.page-header__toggle {
+  position: relative;
+  display: block;
+  width: 62px;
+  height: 62px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.page-header__nav--closed .page-header__toggle::before {
+  position: absolute;
+  right: 0;
+  top: 16px;
+  content: "";
+  width: 62px;
+  height: 4px;
+  background-color: $color-primary;
+  box-shadow:
+    0 14px 0 $color-primary,
+    0 28px 0 $color-primary;
+}
+
+.page-header__nav--opened .page-header__toggle {
+  &::before,
+  &::after{
+    top: 50%;
+    right: 0;
+    content: "";
+    position: absolute;
+    width: 63px;
+    height: 4px;
+    background-color: $color-primary;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.page-header__logo {
+  justify-self: center;
+  margin-top: -12px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.page-header__second-nav {
+  margin: 0;
+
+  @media (max-width: $mobile-width-only) {
+    background-color: $color-white;
+
+    .page-header__nav--closed & {
+      display: none;
+    }
+
+    .page-header__nav--opened & {
+      position: absolute;
+      right: 0;
+      left: 0;
+
+      display: block;
+      z-index: 10;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.page-header__menu {
+  @media (min-width: $tablet-width) {
+    margin-right: 38px;
+  }
+}
+
+.page-header__language {
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 65px;
+  }
+}

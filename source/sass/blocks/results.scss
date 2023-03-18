@@ -1,0 +1,146 @@
+.results {
+  padding: 24px;
+  padding-top: 0;
+  padding-bottom: 58px;
+  display: grid;
+  text-align: center;
+}
+
+.results__list {
+  margin: 0;
+  margin-bottom: 41px;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $medium-desktop-width) {
+    margin-bottom: 48px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+  }
+}
+
+.results__item {
+  margin-bottom: 69px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: $medium-desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.results__content {
+  @media (min-width: $medium-desktop-width) {
+    display: grid;
+    grid-template-columns: max-content 453px 1fr 1fr;
+    grid-template-areas:
+      "qr res-text kittie button"
+      "qr txt     kittie button";
+    align-items: center;
+  }
+}
+
+.results__qrcode {
+  @media (max-width: $desktop-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+
+  @media (min-width: $medium-desktop-width) {
+    margin-bottom: 0;
+    margin-right: 70px;
+    grid-area: qr;
+
+    width: 165px;
+    height: 165px;
+  }
+}
+
+.results__res-text {
+  margin: 0;
+  padding: 10px 0;
+
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 27px;
+  color: $color-white;
+  background-color: $color-primary-2;
+  border-radius: 40px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 34px;
+    line-height: 39px;
+  }
+
+  @media (min-width: $medium-desktop-width) {
+    grid-area: res-text;
+    align-self: end;
+  }
+}
+
+.results__animation-kittie {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 377px;
+  height: 349px;
+
+  @media (min-width: $medium-desktop-width) {
+    margin-bottom: 0;
+    grid-area: kittie;
+
+    width: 259px;
+    height: 240px;
+  }
+
+}
+
+.results__text {
+  margin: 0;
+  margin-bottom: 34px;
+
+  font-family: $font-title;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 48px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 57px;
+  }
+
+  @media (min-width: $medium-desktop-width) {
+    margin-bottom: 0;
+    grid-area: txt;
+    align-self: start;
+  }
+}
+
+.results__button {
+  margin: 0 auto;
+  color: $color-primary;
+  width: 254px;
+  border: 2px solid $color-primary;
+
+  @media (min-width: $medium-desktop-width) {
+    grid-area: button;
+  }
+
+  &:hover {
+    color: $color-white;
+    background-color: $color-primary;
+  }
+
+  &:active {
+    color: $color-primary-2;
+    border-color: $color-primary-2;
+  }
+}

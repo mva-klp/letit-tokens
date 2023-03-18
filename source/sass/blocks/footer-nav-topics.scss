@@ -1,0 +1,15 @@
+.footer-nav-topics {
+  margin: 0;
+  padding: 0;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 40px;
+
+  list-style: none;
+  text-align: left;
+
+  @media (min-width: $wide-desktop-width) {
+    column-gap: 90px;
+  }
+}

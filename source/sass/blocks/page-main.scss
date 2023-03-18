@@ -1,0 +1,10 @@
+.page-main {
+  position: relative;
+}
+
+//добавляет JS скриптом в мобильной версии при открытии details
+.page-main--margin {
+  @media (max-width: $mobile-width-only) {
+    margin-top: 86px;
+  }
+}

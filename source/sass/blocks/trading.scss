@@ -1,0 +1,66 @@
+.trading {
+  padding-top: 8px;
+  background-color: $color-white;
+  text-align: center;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 60px;
+  }
+
+  @media (min-width: $medium-desktop-width-2) {
+    padding-top: 60px;
+  }
+}
+
+.trading__title-container {
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &::after {
+    position: absolute;
+    content: "club";
+    margin-left: 100px;
+
+    top: calc(50% - 26px);
+
+    font-family: $font-title;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 58px;
+    text-transform: uppercase;
+
+    color: $color-primary;
+  }
+
+  @media (min-width: $medium-desktop-width-2) {
+    position: absolute;
+    right: 64px;
+    top: 0;
+  }
+
+  @media (min-width: $wide-desktop-width) {
+    right: 100px;
+  }
+}
+
+.trading__image {
+  display: block;
+  margin-right: 64px;
+}
+
+.trading__cards {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  justify-items: center;
+  row-gap: 58px;
+
+  @media (min-width: $medium-desktop-width) {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    justify-content: center;
+    gap: 80px;
+  }
+}

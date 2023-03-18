@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Токены LETIT</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="page__body">
+
+  <header class="page-header">
+    <nav class="page-header__nav">
+      <div class="page-header__bar">
+        <button class="page-header__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <a class="page-header__logo logo" href="">
+          <img class="logo__img" src="img/logo.svg" width="75" height="75" alt="Токены LETIT">
+        </a>
+      </div>
+
+      <div class="page-header__second-nav">
+        <ul class="page-header__menu site-menu">
+          <li class="site-menu__item site-menu__item--current">
+            <a class="site-menu__link">
+              White Paper
+            </a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="tarifs.html">
+              Тарифы
+            </a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="shop.html">
+              Магазин
+            </a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="school.html">
+              Школа
+            </a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="blog.html">
+              Блог
+            </a>
+          </li>
+          <li class="site-menu__item">
+            <a class="site-menu__link" href="faq.html">
+              FAQ
+            </a>
+          </li>
+        </ul>
+
+        <ul class="page-header__social social">
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Twitter</span>
+              <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M34.9178 3.1919C33.6423 3.74308 32.2896 4.1051 30.9045 4.26595C32.3653 3.41506 33.4588 2.07408 33.9807 0.493522C32.6075 1.28683 31.1055 1.84516 29.5396 2.14437C28.582 1.15186 27.3417 0.462275 25.9788 0.164582C24.616 -0.13311 23.193 -0.0252473 21.8935 0.474254C20.594 0.973754 19.4776 1.84197 18.6884 2.9669C17.8991 4.09182 17.4733 5.42183 17.4657 6.78533C17.4655 7.30725 17.5247 7.82758 17.6423 8.33673C14.8687 8.20391 12.1546 7.50381 9.67584 6.28176C7.19704 5.05971 5.00877 3.34297 3.25277 1.2427C2.36048 2.74383 2.08711 4.52035 2.48822 6.21119C2.88933 7.90203 3.93483 9.38032 5.41222 10.3456C4.31419 10.3057 3.24143 10.0127 2.2817 9.49034V9.57653C2.28198 11.1463 2.83564 12.6681 3.84967 13.8863C4.86369 15.1045 6.27628 15.9449 7.85008 16.2661C7.24994 16.4237 6.63126 16.504 6.0098 16.5048C5.56759 16.5033 5.12651 16.4611 4.6924 16.3788C5.14022 17.7329 6.00965 18.9167 7.17947 19.7653C8.3493 20.6138 9.76119 21.0848 11.2183 21.1126C8.74537 23.0084 5.69068 24.036 2.54654 24.0298C1.99062 24.0292 1.43518 23.9982 0.882812 23.937C4.0745 25.941 7.79019 27.0045 11.585 27C24.433 27 31.4817 16.6109 31.4817 7.60081C31.4817 7.30909 31.4817 7.01074 31.4817 6.71903C32.831 5.75017 33.9943 4.5561 34.9178 3.1919Z" fill="currentColor"/>
+                </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Telegram</span>
+              <svg width="33" height="28" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M31.8827 0.385334C31.5531 0.162162 31.167 0.0287579 30.7651 -0.000809248C30.3633 -0.0303764 29.9606 0.0449888 29.5995 0.217339C28.6615 0.581329 3.22621 11.081 2.1864 11.508C2.00462 11.571 0.354012 12.166 0.528525 13.482C0.62178 13.8819 0.820719 14.2518 1.10607 14.5559C1.39143 14.86 1.75353 15.0881 2.15732 15.2179L8.62885 17.3179C9.05786 18.7178 10.6358 23.7647 10.9848 24.8497C11.2029 25.5497 11.5592 26.4106 12.1846 26.5926C12.4276 26.6805 12.6907 26.7041 12.9464 26.661C13.2021 26.6179 13.4412 26.5097 13.6388 26.3476L17.5945 22.8477L23.9788 27.6356L24.1314 27.7266C24.5216 27.9002 24.9451 27.9932 25.3749 27.9996C25.676 27.9991 25.9744 27.9445 26.2547 27.8386C26.8757 27.5686 27.3687 27.0839 27.6363 26.4806L32.3845 2.62527C32.6753 1.35131 32.2681 0.700326 31.8827 0.385334ZM14.3296 18.1999L12.1482 23.7997L9.96679 16.7999L26.691 4.90021L14.3296 18.1999Z" fill="currentColor"/>
+                </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Instagram</span>
+              <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.6448 0H9.42876C6.9503 0.000576413 4.57349 0.955359 2.82081 2.65447C1.06813 4.35358 0.0830226 6.65795 0.0820315 9.06105V19.9353C0.0817369 21.1256 0.32328 22.3043 0.792865 23.4041C1.26245 24.5038 1.95088 25.5031 2.81883 26.3449C3.68679 27.1866 4.71726 27.8544 5.85141 28.3099C6.98555 28.7655 8.20115 29 9.42876 29H20.6448C22.4938 28.9995 24.3012 28.4676 25.8384 27.4713C27.3756 26.4751 28.5737 25.0593 29.2812 23.403C29.7502 22.3032 29.9916 21.1247 29.9916 19.9346V9.06178C29.9914 6.65838 29.0065 4.35348 27.2537 2.65409C25.5009 0.954697 23.1236 -7.69088e-09 20.6448 0V0ZM27.1883 19.9353C27.1884 20.7684 27.0192 21.5934 26.6905 22.3631C26.3617 23.1328 25.8798 23.8322 25.2722 24.4212C24.6646 25.0103 23.9433 25.4776 23.1495 25.7964C22.3557 26.1152 21.5048 26.2792 20.6456 26.2791H9.42876C7.69346 26.2791 6.02922 25.6107 4.8021 24.4211C3.57499 23.2314 2.8855 21.6179 2.8853 19.9353V9.06032C2.8853 8.22729 3.05454 7.40241 3.38335 6.63279C3.71216 5.86317 4.19411 5.16389 4.80167 4.57487C5.40922 3.98586 6.13049 3.51865 6.92429 3.19993C7.71808 2.8812 8.56885 2.7172 9.42802 2.7173H20.6448C22.3801 2.71749 24.0442 3.38589 25.2713 4.57551C26.4984 5.76513 27.1879 7.37858 27.1883 9.06105V19.9353Z" fill="currentColor"/>
+                <path d="M15.0365 7.24992C13.9308 7.24989 12.8389 7.48754 11.8392 7.94578C10.8396 8.40402 9.95725 9.07144 9.2556 9.9C8.55394 10.7286 8.05047 11.6976 7.78143 12.7375C7.51239 13.7773 7.48448 14.8621 7.69969 15.9137C7.9153 16.9654 8.36883 17.9577 9.02761 18.8189C9.6864 19.6802 10.534 20.3891 11.5094 20.8945C12.4848 21.3999 13.5637 21.6892 14.6683 21.7416C15.7729 21.794 16.8757 21.6081 17.8974 21.1975C19.4952 20.5554 20.814 19.3961 21.6292 17.917C22.4444 16.4379 22.7056 14.7306 22.3682 13.0858C22.0308 11.4409 21.1158 9.9604 19.7789 8.89631C18.4421 7.83221 16.7661 7.25038 15.0365 7.24992ZM15.0365 19.0283C14.1123 19.0278 13.2089 18.7617 12.4407 18.2635C11.6724 17.7653 11.0738 17.0574 10.7204 16.2294C10.3671 15.4013 10.2749 14.4903 10.4555 13.6114C10.6361 12.7326 11.0815 11.9254 11.7352 11.2919C12.389 10.6585 13.2218 10.2272 14.1283 10.0526C15.0348 9.87801 15.9744 9.96797 16.8282 10.3111C17.682 10.6542 18.4117 11.2351 18.925 11.9803C19.4384 12.7256 19.7123 13.6016 19.7121 14.4977C19.7107 15.6995 19.2176 16.8516 18.341 17.7011C17.4644 18.5507 16.2759 19.0282 15.0365 19.029V19.0283ZM23.0747 7.67187C23.3389 7.67187 23.5924 7.57009 23.7792 7.38892C23.9661 7.20775 24.0711 6.96202 24.0711 6.70581C24.0711 6.44959 23.9661 6.20387 23.7792 6.0227C23.5924 5.84153 23.3389 5.73975 23.0747 5.73975C22.8104 5.73975 22.557 5.84153 22.3702 6.0227C22.1833 6.20387 22.0783 6.44959 22.0783 6.70581C22.0783 6.96202 22.1833 7.20775 22.3702 7.38892C22.557 7.57009 22.8104 7.67187 23.0747 7.67187Z" fill="currentColor"/>
+                </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Linkedin</span>
+              <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M27.111 0H5.00373C3.83326 0.00287061 2.7116 0.439943 1.88395 1.21568C1.0563 1.99141 0.589977 3.0427 0.586914 4.13975L0.586914 24.8603C0.589977 25.9573 1.0563 27.0086 1.88395 27.7843C2.7116 28.5601 3.83326 28.9971 5.00373 29H27.111C28.2815 28.9971 29.4031 28.5601 30.2308 27.7843C31.0584 27.0086 31.5248 25.9573 31.5278 24.8603V4.13975C31.5248 3.0427 31.0584 1.99141 30.2308 1.21568C29.4031 0.439943 28.2815 0.00287061 27.111 0ZM9.61083 24.1657H4.45376V10.8757H9.61161V24.1657H9.61083ZM7.03191 9.3032C5.48641 9.3032 4.45298 8.33533 4.45298 7.1282C4.45298 5.80145 5.48641 4.8343 7.03191 4.8343C8.57818 4.8343 9.61083 5.80218 9.61083 7.0093C9.61083 8.33605 8.57818 9.30393 7.03191 9.30393V9.3032ZM27.6602 24.1657H22.5024V16.9172C22.5024 14.9814 21.083 14.5 20.6985 14.5C20.3148 14.5 18.6355 14.7414 18.6355 16.9172V24.1657H13.4777V10.8757H18.6355V12.8093C19.4106 11.7204 20.6985 10.8757 23.1467 10.8757C25.5949 10.875 27.6602 12.6868 27.6602 16.9172V24.1657Z" fill="currentColor"/>
+                </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Youtube</span>
+              <svg width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.687 1.90606e-06C3.21902 -0.00028404 2.75557 0.0888773 2.32316 0.262387C1.89075 0.435897 1.49785 0.690352 1.16694 1.0112C0.836026 1.33205 0.573591 1.713 0.394639 2.13226C0.215687 2.55152 0.123729 3.00088 0.124024 3.45463V25.5454C0.123729 25.9991 0.215687 26.4485 0.394639 26.8677C0.573591 27.287 0.836026 27.668 1.16694 27.9888C1.49785 28.3096 1.89075 28.5641 2.32316 28.7376C2.75557 28.9111 3.21902 29.0003 3.687 29H26.4706C26.9386 29.0005 27.4022 28.9114 27.8347 28.738C28.2672 28.5646 28.6601 28.3101 28.9911 27.9892C29.322 27.6683 29.5845 27.2873 29.7634 26.868C29.9422 26.4486 30.0341 25.9992 30.0336 25.5454V3.45463C30.0341 3.00082 29.9422 2.55138 29.7634 2.13203C29.5845 1.71269 29.322 1.33166 28.9911 1.01077C28.6601 0.689888 28.2672 0.43544 27.8347 0.261998C27.4022 0.088556 26.9386 -0.000475027 26.4706 1.90606e-06H3.687ZM7.96107 2.76153H9.66965L10.8092 5.52233L11.948 2.76153H13.6588L11.5181 7.59438V10.3566H10.0936V7.58858C9.66592 6.4757 8.2482 3.45463 7.95659 2.76153H7.96107ZM15.0788 4.83358C15.388 4.81776 15.6971 4.86814 15.984 4.98116C16.2708 5.09419 16.5286 5.26706 16.7388 5.48753C17.0453 5.82755 17.2158 6.37203 17.2158 7.08978V8.0997C17.2158 8.81745 17.0738 9.3148 16.7747 9.65265C16.5607 9.87896 16.2996 10.0587 16.0087 10.1799C15.7178 10.3011 15.4036 10.3611 15.087 10.3559C14.7701 10.363 14.4554 10.3039 14.1642 10.1825C13.873 10.0612 13.6121 9.88045 13.3994 9.65265C13.0935 9.3148 12.9433 8.81745 12.9433 8.0997V7.09775C12.9433 6.38 13.1078 5.82755 13.4211 5.48825C13.8129 5.01918 14.3595 4.83358 15.0788 4.83358ZM17.9269 4.83358H19.3529V8.97768C19.3814 9.0643 19.4401 9.1386 19.519 9.18781C19.5979 9.23702 19.6919 9.25808 19.7851 9.24738C20.0782 9.24738 20.4476 8.91605 20.7766 8.54993V4.83358H22.201V10.3559H20.7743V9.40325C20.1963 9.9499 19.7051 10.3588 19.0575 10.3385C18.5864 10.324 18.2597 10.158 18.0952 9.82665C17.9658 9.52235 17.9076 9.19403 17.9247 8.8653L17.9269 4.8343V4.83358ZM15.0788 5.95008C14.9834 5.9503 14.8891 5.97007 14.8021 6.00808C14.6723 6.06358 14.5618 6.15429 14.4839 6.26929C14.4061 6.38428 14.3641 6.51866 14.3632 6.65623V8.59488C14.3636 8.7816 14.4396 8.96071 14.5748 9.09368C14.6397 9.15746 14.717 9.20822 14.8021 9.24303C14.8891 9.28096 14.9834 9.30058 15.0788 9.30058C15.1742 9.30058 15.2685 9.28096 15.3555 9.24303C15.4853 9.1878 15.5958 9.0971 15.6733 8.98199C15.7509 8.86689 15.7922 8.73237 15.7921 8.59488V6.6555C15.7931 6.47049 15.7188 6.29258 15.5852 6.16047C15.4516 6.02836 15.2696 5.95275 15.0788 5.95008ZM15.0788 12.4279C15.0788 12.4279 19.8568 12.4279 23.0489 12.6491C23.4961 12.6984 24.4667 12.7042 25.3355 13.5676C26.019 14.218 26.2388 15.7086 26.2388 15.7086C26.4063 16.6344 26.4841 17.5733 26.4706 18.5129V20.1492C26.4848 21.0889 26.4077 22.0278 26.2403 22.9535C26.2403 22.9535 26.0294 24.4448 25.3378 25.0951C24.4681 25.9579 23.4983 25.9651 23.0512 26.0137C19.8591 26.2348 15.0743 26.2407 15.0743 26.2407C15.0743 26.2407 9.14848 26.1855 7.32624 26.0195C6.82002 25.9296 5.68122 25.9586 4.8116 25.1017C4.12816 24.4448 3.90833 22.9535 3.90833 22.9535C3.7438 22.0271 3.66969 21.0877 3.687 20.1477V18.5107C3.67204 17.5711 3.74981 16.6329 3.9173 15.7071C3.9173 15.7071 4.12816 14.2158 4.81982 13.5655C5.68944 12.7027 6.65926 12.6955 7.10641 12.6469C10.294 12.4279 15.0788 12.4279 15.0788 12.4279ZM5.81955 15.1916V16.5575H7.24399V23.4777H8.66993V16.5575H10.0936V15.1916H5.81955ZM15.0788 15.1916V23.4777H16.5025V22.6142C16.9519 23.1521 17.5389 23.4769 18.0174 23.4769C18.2797 23.4858 18.5377 23.4104 18.7513 23.2625C18.965 23.1147 19.1223 22.9026 19.1988 22.6591C19.311 22.2792 19.3633 21.8848 19.3529 21.489V19.5931C19.3617 19.0916 19.2993 18.5912 19.1674 18.1061C19.0992 17.8618 18.9493 17.6463 18.7412 17.4934C18.5331 17.3406 18.2785 17.259 18.0174 17.2615C17.319 17.2615 17.0364 17.6066 16.5025 18.2127V15.1916H15.0788ZM10.0936 17.2615V21.8776C10.0787 22.2357 10.1347 22.5932 10.2581 22.931C10.3345 23.1053 10.4655 23.2519 10.6326 23.35C10.7997 23.4481 10.9944 23.4928 11.1891 23.4777C11.7095 23.4777 12.381 23.1217 12.9418 22.5344V23.4769H14.3655V17.2622H12.9418V21.5919C12.6292 22.0016 12.1716 22.2952 11.8874 22.2952C11.8013 22.3052 11.7145 22.2822 11.6456 22.2312C11.5766 22.1801 11.5309 22.1051 11.5181 22.0219V17.2622L10.0936 17.2615ZM22.2219 17.2615C21.9105 17.2463 21.5993 17.2949 21.3085 17.4041C21.0178 17.5133 20.754 17.6806 20.5343 17.8952C20.2367 18.1997 20.0617 18.6999 20.0617 19.3452V21.4549C20.0617 22.0987 20.2539 22.5489 20.5507 22.8491C20.9583 23.2587 21.5168 23.4632 22.2533 23.4632C22.9899 23.4632 23.5656 23.2457 23.9537 22.8063C24.1212 22.62 24.2349 22.3945 24.2827 22.1516C24.3159 21.8991 24.3334 21.6449 24.3351 21.3904H22.9114V21.9436C22.882 22.1062 22.7944 22.2537 22.664 22.3599C22.5336 22.4661 22.3687 22.5244 22.1984 22.5244C22.0281 22.5244 21.8632 22.4661 21.7328 22.3599C21.6024 22.2537 21.5148 22.1062 21.4854 21.9436V20.6987H24.3358V19.3038C24.3358 18.6579 24.1713 18.1852 23.8774 17.872C23.6618 17.6623 23.4028 17.4994 23.1174 17.394C22.832 17.2887 22.5268 17.244 22.2219 17.2615ZM22.201 18.262C22.3742 18.2491 22.5457 18.3024 22.6789 18.4105C22.8121 18.5186 22.8963 18.673 22.9136 18.8406V19.7591H21.4877V18.8406C21.5047 18.6727 21.589 18.518 21.7224 18.4097C21.8557 18.3014 22.0276 18.2489 22.201 18.262ZM17.3721 18.4657C17.7602 18.4657 17.9269 18.6977 17.9269 19.4169V21.3172C17.9269 22.0371 17.7602 22.2872 17.3721 22.2872C17.0488 22.2603 16.7435 22.1317 16.5025 21.9211V18.9007C16.7409 18.6749 17.0439 18.5238 17.3721 18.4672V18.4657Z" fill="currentColor"/>
+                </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="#">
+              <span class="visually-hidden">Reddit</span>
+              <svg width="36" height="31" viewBox="0 0 36 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M21.2071 0C19.6013 0 17.7292 1.21786 17.4477 6.64286C17.6912 6.64286 17.9195 6.64286 18.163 6.64286H18.9697C19.1523 3.39524 19.959 1.47619 21.2071 1.47619C21.7398 1.47619 22.0442 1.75667 22.6073 2.35452C23.4174 3.33737 24.5513 4.02015 25.8188 4.28833C25.792 4.09004 25.7767 3.89044 25.7732 3.69048C25.7726 3.38812 25.8032 3.08647 25.8645 2.79C25.016 2.53892 24.2688 2.0386 23.726 1.3581C23.4385 0.96259 23.0626 0.635081 22.6265 0.399945C22.1904 0.164809 21.7052 0.028102 21.2071 0ZM30.3392 0.738095C29.7372 0.738095 29.1486 0.911249 28.648 1.23566C28.1475 1.56007 27.7573 2.02117 27.5269 2.56065C27.2965 3.10013 27.2362 3.69375 27.3537 4.26646C27.4711 4.83916 27.761 5.36523 28.1868 5.77812C28.6125 6.19102 29.1549 6.47221 29.7454 6.58613C30.3359 6.70005 30.9479 6.64158 31.5041 6.41812C32.0604 6.19466 32.5358 5.81625 32.8703 5.33073C33.2048 4.84521 33.3833 4.2744 33.3833 3.69048C33.3833 2.90746 33.0626 2.15651 32.4917 1.60283C31.9208 1.04915 31.1466 0.738095 30.3392 0.738095ZM18.163 8.11905C8.93194 8.11905 1.42074 12.6805 1.42074 19.1905C1.42074 25.7005 8.93194 31 18.163 31C27.3941 31 34.9053 25.7005 34.9053 19.1905C34.9053 12.6805 27.3941 8.11905 18.163 8.11905ZM4.8453 8.81286C3.72643 8.82126 2.65655 9.25915 1.86974 10.0307C1.2523 10.6194 0.840316 11.3808 0.691557 12.2081C0.542798 13.0354 0.664722 13.8871 1.04023 14.6438C2.35291 12.3446 4.3392 10.4746 6.74783 9.27048C6.15913 8.97612 5.50759 8.81941 4.8453 8.81286ZM31.4808 8.81286C30.8262 8.82283 30.1829 8.97945 29.601 9.27048C32.0012 10.4782 33.9792 12.3478 35.2858 14.6438C35.6613 13.8871 35.7832 13.0354 35.6345 12.2081C35.4857 11.3808 35.0737 10.6194 34.4563 10.0307C33.6695 9.25915 32.5996 8.82126 31.4808 8.81286ZM12.0749 14.7619C12.5265 14.7619 12.9679 14.8918 13.3433 15.1351C13.7188 15.3784 14.0114 15.7242 14.1842 16.1288C14.357 16.5334 14.4022 16.9786 14.3141 17.4082C14.226 17.8377 14.0086 18.2323 13.6893 18.5419C13.37 18.8516 12.9632 19.0625 12.5203 19.1479C12.0775 19.2334 11.6184 19.1895 11.2012 19.0219C10.7841 18.8543 10.4275 18.5705 10.1766 18.2064C9.92578 17.8422 9.79188 17.4141 9.79188 16.9762C9.79188 16.3889 10.0324 15.8257 10.4606 15.4105C10.8887 14.9952 11.4694 14.7619 12.0749 14.7619ZM24.2511 14.7619C24.7027 14.7619 25.1441 14.8918 25.5195 15.1351C25.895 15.3784 26.1876 15.7242 26.3604 16.1288C26.5332 16.5334 26.5784 16.9786 26.4903 17.4082C26.4022 17.8377 26.1848 18.2323 25.8655 18.5419C25.5462 18.8516 25.1394 19.0625 24.6965 19.1479C24.2537 19.2334 23.7946 19.1895 23.3774 19.0219C22.9603 18.8543 22.6037 18.5705 22.3528 18.2064C22.102 17.8422 21.9681 17.4141 21.9681 16.9762C21.9681 16.3889 22.2086 15.8257 22.6368 15.4105C23.0649 14.9952 23.6456 14.7619 24.2511 14.7619ZM11.3596 22.881C11.4599 22.8963 11.556 22.931 11.6422 22.983C11.7285 23.035 11.8032 23.1032 11.8618 23.1836C11.9379 23.2869 13.7263 25.6045 18.163 25.6045C22.5997 25.6045 24.449 23.2279 24.4642 23.2057C24.5213 23.1243 24.5947 23.0547 24.6799 23.0012C24.7652 22.9477 24.8606 22.9112 24.9606 22.894C25.0606 22.8769 25.1632 22.8792 25.2622 22.9011C25.3612 22.9229 25.4547 22.9638 25.5372 23.0212C25.6946 23.136 25.8 23.3055 25.8312 23.494C25.8624 23.6826 25.8171 23.8756 25.7047 24.0324C25.6133 24.1579 23.4216 27.0807 18.163 27.0807C12.9044 27.0807 10.7127 24.1283 10.6214 24.0324C10.509 23.8756 10.4636 23.6826 10.4949 23.494C10.5261 23.3055 10.6314 23.136 10.7888 23.0212C10.8696 22.9622 10.9616 22.9194 11.0596 22.8954C11.1576 22.8713 11.2596 22.8664 11.3596 22.881Z" fill="currentColor"/>
+                </svg>
+            </a>
+          </li>
+        </ul>
+
+        <a class="page-header__language language" href="#"><span class="visually-hidden">Язык страницы</span>En</a>
+      </div>
+
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <header class="page-main__header promo">
+      <div class="promo__container container">
+        <h1 class="promo__title">Токены LETIT</h1>
+        <p class="promo__text"><span>LIVE!</span>идёт третий раунд пресейла!</p>
+        <p class="promo__description">Залетай на третий пресейл токенов LETIT, это уникальный крипто-актив, развернутый на BNB chain. Наша крипта открывает доступ ко всем возможностям экосистемы, листай дальше или сразу инвестируй в LETIT на пресейлах, а после листинга на биржах следи за курсом!  ( ‾́ ◡ ‾́ )</p>
+        <img class="promo__image" src="img/promo.png" width="474" height="790" alt="Токены LETIT">
+        <a class="promo__button button" href="#">Купить токены</a>
+      </div>
+    </header>
+
+    <section class="page-main__section accordion">
+        <h2 class="visually-hidden">Разделы каталога</h2>
+        <details class="accordion__item accordion__item--loyalty">
+          <summary class="accordion__header accordion__header--loyalty">
+            <h3 class="accordion__title accordion__title--loyalty">Программы лояльности</h3>
+            <span class="accordion__text accordion__text--loyalty">скидки до 100% на подписку к торговому терминалу Letit</span>
+          </summary>
+          <div class="accordion__body loyalty">
+            <div class="loyalty__animation loyalty__animation--flower animation">
+              <span class="visually-hidden">Цветок скидки</span>
+              <img class="animation__image animation__image--flower" src="img/flower.svg" width="215" height="303" alt="Цветок">
+            </div>
+            <div class="loyalty__table-wrapper">
+              <table class="loyalty__table table">
+                <caption class="visually-hidden">Таблица программы лояльности</caption>
+                <col style="width:76px">
+                <col span="4" class="table__col">
+                <thead class="table__head">
+                  <tr class="table__head-row">
+                    <th class="table__column-title" scope="col"><span class="visually-hidden">Уровень скидки</span></th>
+                    <th class="table__column-title" scope="col">5000+</th>
+                    <th class="table__column-title" scope="col">10000+</th>
+                    <th class="table__column-title" scope="col">20000+</th>
+                    <th class="table__column-title" scope="col">50000+</th>
+                  </tr>
+                </thead>
+                <tbody class="table__body">
+                  <tr class="table__body-row-1">
+                    <th class="table__body-row-title" scope="row">Brave</th>
+                    <td class="table__body-cell">-50%</td>
+                    <td class="table__body-cell table__body-cell--total">-100%</td>
+                    <td class="table__body-cell table__body-cell--total">-100%</td>
+                    <td class="table__body-cell table__body-cell--total">-100%</td>
+                  </tr>
+                  <tr class="table__body-row-2">
+                      <th class="table__body-row-title" scope="row">Clever</th>
+                      <td class="table__body-cell">-30%</td>
+                      <td class="table__body-cell">-50%</td>
+                      <td class="table__body-cell table__body-cell--total">-100%</td>
+                      <td class="table__body-cell table__body-cell--total">-100%</td>
+                  </tr>
+                  <tr class="table__body-row-3">
+                      <th class="table__body-row-title" scope="row">Wise</th>
+                      <td class="table__body-cell">-10%</td>
+                      <td class="table__body-cell">-20%</td>
+                      <td class="table__body-cell">-50%</td>
+                      <td class="table__body-cell table__body-cell--total">-100%</td>
+                  </tr>
+                </tbody>
+                <tfoot class="table__foot">
+                  <tr class="table__foot-row">
+                    <th class="table__foot-row-title" scope="row">Форум</th>
+                    <td class="table__foot-cell">без приоритета</td>
+                    <td class="table__foot-cell">низкий</td>
+                    <td class="table__foot-cell">средний</td>
+                    <td class="table__foot-cell">высокий</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <p class="loyalty__footer-text">Для держателей 5000 и выше токенов сервисы Letit предоставляется без рекламы!</p>
+          </div>
+        </details>
+
+        <details class="accordion__item accordion__item--results">
+
+          <summary class="accordion__header">
+            <h3 class="accordion__title">Итоги раундов</h3>
+            <span class="presale-title">
+              <span class="presale-title__star">*</span> Seed <span class="presale-title__end-text">end</span>
+            </span>
+            <span class="presale-title">() Private <span  class="presale-title__end-text">sold out</span></span>
+            <span class="presale-title">! Public <span  class="presale-title__end-text">13,67%</span></span>
+            <span class="accordion__subtitle">Пресейлы до официального листинга</span>
+          </summary>
+
+          <div class="accordion__body results">
+            <ul class="results__list">
+              <li class="results__item presale">
+                <div class="presale__title presale-title">
+                  <span class="presale-title__star">*</span> Seed <span class="presale-title__end-text">end</span>
+                </div>
+                <ul class="presale__list">
+                  <li class="presale__item">
+                    токенов
+                    <span class="presale__count">10 000 000</span>
+                  <li class="presale__item">
+                    цена
+                    <span class="presale__count">$0.04</span>
+                  <li class="presale__item">
+                    старт
+                    <time class="presale__count" datetime="2022-05-01">01.05.22</time>
+                  <li class="presale__item">
+                    конец
+                    <time class="presale__count" datetime="2022-06-23">23.06.22</time>
+                  <li class="presale__item">
+                    выкуплено
+                    <span class="presale__count">6 198 540</span>
+                  <li class="presale__item">
+                    <span class="visually-hidden">Проценты</span>
+                    <span class="presale__count presale__count--underline">61.9%</span>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="results__item presale">
+                <div class="presale__title presale-title">
+                  () Private <span class="presale-title__end-text">sold out</span>
+                </div>
+                <ul class="presale__list">
+                  <li class="presale__item">
+                    токенов
+                    <span class="presale__count">10 000 000</span>
+                  <li class="presale__item">
+                    цена
+                    <span class="presale__count">$0.06</span>
+                  <li class="presale__item">
+                    старт
+                    <time class="presale__count" datetime="2022-08-18">18.08.22</time>
+                  <li class="presale__item">
+                    конец
+                    <time class="presale__count" datetime="2022-09-21">21.09.22</time>
+                  <li class="presale__item">
+                    выкуплено
+                    <span class="presale__count">10 000 000</span>
+                  <li class="presale__item">
+                    <span class="visually-hidden">Проценты</span>
+                    <span class="presale__count presale__count--underline">100%</span>
+                  </li>
+                </ul>
+              </li>
+
+              <li class="results__item presale">
+                <div class="presale__title presale-title">
+                  ! Public <span class="presale-title__end-text presale-title__end-text--public">13,67%</span>
+                </div>
+                <ul class="presale__list presale__list--bold">
+                  <li class="presale__item">
+                    токенов
+                    <span class="presale__count">30 000 000</span>
+                  <li class="presale__item">
+                    цена
+                    <span class="presale__count">$0.08</span>
+                  <li class="presale__item">
+                    старт
+                    <time class="presale__count" datetime="2022-10-10">10.10.22</time>
+                  <li class="presale__item">
+                    конец
+                    <span class="presale__count">---</span>
+                  <li class="presale__item">
+                    выкуплено
+                    <span class="presale__count">4 103 136</span>
+                  <li class="presale__item">
+                    <span class="visually-hidden">Проценты</span>
+                    <span class="presale__count presale__count--underline">13.67%</span>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <div class="results__content">
+              <img class="results__qrcode" src="img/qr-ru.svg" width="165" height="165" alt="qr-code">
+              <p class="results__res-text">Всего 85 678 держателей токенов LETIT</p>
+              <div class="results__animation-kittie animation">
+                <span class="visually-hidden">Котенок анимация</span>
+                <img class="animation__image" src="img/kittie.svg" width="377" height="349" alt="Котенок">
+              </div>
+              <p class="results__text">подписчики @Letit_app узнают инфу по сейлам раньше всех</p>
+              <a class="results__button button" href="#">Подписаться</a>
+            </div>
+          </div>
+        </details>
+
+        <details class="accordion__item accordion__item--trading">
+          <summary class="accordion__header accordion__header--trading">
+            <h3 class="accordion__title accordion__title--trading">Закрытый трейдинг клуб</h3>
+            <span>
+              <img class="accordion__image accordion__image--dolphin" src="img/dolphin.svg" width="93" height="115" alt="Дельфин">
+            </span>
+            <span>
+              <img class="accordion__image accordion__image--whale" src="img/whale.svg" width="97" height="115" alt="Кит">
+            </span>
+            <span>
+              <img class="accordion__image accordion__image--shark" src="img/shark.svg" width="119" height="99" alt="Акула">
+            </span>
+          </summary>
+          <div class="accordion__body trading accordion__body--trading">
+            <div class="trading__title-container">
+              <img class="trading__image" src="img/logo.svg" width="166" height="166" alt="Сlub LETIT">
+            </div>
+            <ul class="trading__cards">
+              <li class="trading__item trading-card trading-card--dolphin">
+                <div class="trading-card__header">
+                  <h4 class="trading-card__title">100 000 LETIT</h4>
+                  <p class="trading-card__cost">8 000 USDT</p>
+                  <p class="trading-card__subcost">(0.08 USDT)</p>
+                  <div class="trading-card__lead">
+                    <p class="trading-card__lead-title">Только на период токен сейла:</p>
+                    <p class="trading-card__lead-description">1 доля в подарок за 18 месяцев</p>
+                  </div>
+                </div>
+                <div class="trading-card__content">
+                  <p class="trading-card__content-title">Постоянные привелегии:</p>
+                  <ul class="trading-card__list">
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">Базовое обучение</p>
+                      <p class="trading-card__item-note">(стоимость вне клуба – 2100 USDT)</p>
+                    </li>
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">Закрытый канал</p>
+                      <ul class="trading-card__sublist">
+                        <li class="trading-card__subitem">Технический анализ</li>
+                      </ul>
+                      <p class="trading-card__item-note">(стоимость вне клуба – 2100 USDT)</p>
+                    </li>
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">LETIT SUMMIT TRADERS</p>
+                      <ul class="trading-card__sublist">
+                        <li class="trading-card__subitem">Возможность участия</li>
+                      </ul>
+                    </li>
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">Криптоконферении</p>
+                      <ul class="trading-card__sublist">
+                        <li class="trading-card__subitem">Оповещение об участии</li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+                <div class="trading-card__footer">
+                  <p class="trading-card__profit-title">Выгода за первый год:</p>
+                  <p class="trading-card__profit">8 500 USDT</p>
+                </div>
+                <div class="trading-card__buttons-container">
+                  <a class="trading-card__button button" href="#">Узнать больше</a>
+                  <a class="trading-card__button button" href="#">Купить пакет</a>
+                </div>
+              </li>
+
+              <li class="trading__item trading-card trading-card--shark">
+                <div class="trading-card__header">
+                  <h4 class="trading-card__title">200 000 LETIT</h4>
+                  <p class="trading-card__cost">16 000 USDT</p>
+                  <p class="trading-card__subcost">(0.08 USDT)</p>
+                  <div class="trading-card__lead">
+                    <p class="trading-card__lead-title">Только на период токен сейла:</p>
+                    <p class="trading-card__lead-description">2 доли в подарок за 18 месяцев</p>
+                  </div>
+                </div>
+                <div class="trading-card__content">
+                  <p class="trading-card__content-title">Постоянные привелегии:</p>
+                  <ul class="trading-card__list">
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">Базовое обучение с куратором</p>
+                      <p class="trading-card__item-note">(стоимость вне клуба – 2100 USDT)</p>
+                    </li>
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">Закрытый канал</p>
+                      <ul class="trading-card__sublist">
+                        <li class="trading-card__subitem">Технический анализ</li>
+                        <li class="trading-card__subitem">Аналитика рынка</li>
+                      </ul>
+                      <p class="trading-card__item-note">(недоступен вне клуба)</p>
+                    </li>
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">LETIT SUMMIT TRADERS</p>
+                      <ul class="trading-card__sublist">
+                        <li class="trading-card__subitem">Возможность участия</li>
+                        <li class="trading-card__subitem">Билет со скидкой 50%</li>
+                      </ul>
+                      <p class="trading-card__item-note">(стоимость вне клуба – 5000 USDT)</p>
+                    </li>
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">Криптоконферении</p>
+                      <ul class="trading-card__sublist">
+                        <li class="trading-card__subitem">Возможность участия</li>
+                        <li class="trading-card__subitem">Билет со скидкой 50%</li>
+                      </ul>
+                      <p class="trading-card__item-note">(стоимость вне клуба – 4000 USDT)</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="trading-card__footer">
+                  <p class="trading-card__profit-title">Выгода за первый год:</p>
+                  <p class="trading-card__profit">24 620 USDT</p>
+                </div>
+                <div class="trading-card__buttons-container">
+                  <a class="trading-card__button button" href="#">Узнать больше</a>
+                  <a class="trading-card__button button" href="#">Купить пакет</a>
+                </div>
+              </li>
+
+              <li class="trading__item trading-card trading-card--whale">
+                <div class="trading-card__header">
+                  <h4 class="trading-card__title">500 000 LETIT</h4>
+                  <p class="trading-card__cost">40 000 USDT</p>
+                  <p class="trading-card__subcost">(0.08 USDT)</p>
+                  <div class="trading-card__lead">
+                    <p class="trading-card__lead-title">Только на период токен сейла:</p>
+                    <p class="trading-card__lead-description">5 долей в подарок за 18 месяцев</p>
+                  </div>
+                </div>
+                <div class="trading-card__content">
+                  <p class="trading-card__content-title">Постоянные привелегии:</p>
+                  <ul class="trading-card__list">
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">Продвинутое обучение</p>
+                      <p class="trading-card__item-note">(стоимость вне клуба – 2100 USDT)</p>
+                    </li>
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">Закрытый канал</p>
+                      <ul class="trading-card__sublist">
+                        <li class="trading-card__subitem">Технический анализ</li>
+                        <li class="trading-card__subitem">Аналитика рынка</li>
+                        <li class="trading-card__subitem">Инвестиционные стратегии</li>
+                      </ul>
+                      <p class="trading-card__item-note">(недоступен вне клуба)</p>
+                    </li>
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">LETIT SUMMIT TRADERS</p>
+                      <ul class="trading-card__sublist">
+                        <li class="trading-card__subitem">Возможность участия</li>
+                        <li class="trading-card__subitem">Бесплатный VIP билет</li>
+                      </ul>
+                      <p class="trading-card__item-note">(стоимость вне клуба – 4000 USDT)</p>
+                    </li>
+                    <li class="trading-card__item">
+                      <p class="trading-card__item-title">Криптоконферении</p>
+                      <ul class="trading-card__sublist">
+                        <li class="trading-card__subitem">Совместное участие</li>
+                        <li class="trading-card__subitem">Бесплатные билеты</li>
+                        <li class="trading-card__subitem">Мерч LETIT</li>
+                        <li class="trading-card__subitem">VIP места</li>
+                      </ul>
+                      <p class="trading-card__item-note">(стоимость вне клуба – 4000 USDT)</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="trading-card__footer">
+                  <p class="trading-card__profit-title">Выгода за первый год:</p>
+                  <p class="trading-card__profit">49 000 USDT</p>
+                </div>
+                <div class="trading-card__buttons-container">
+                  <a class="trading-card__button button" href="#">Узнать больше</a>
+                  <a class="trading-card__button button" href="#">Купить пакет</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+    </section>
+
+  </main>
+  <footer class="page-footer">
+    <div class="page-footer__container container">
+      <a class="page-footer__logo logo">
+        <img src="img/logo.svg" width="96" height="96" alt="Токены LETIT">
+      </a>
+
+      <ul class="page-footer__footer-nav-topics footer-nav-topics">
+        <li class="footer-nav-topics__item footer-nav-topic">
+          <ul class="footer-nav-topic__list">
+            <li class="footer-nav-topic__item">
+              <a class="footer-nav-topic__link" href="#">White paper</a>
+            </li>
+            <li class="footer-nav-topic__item">
+              <a class="footer-nav-topic__link" href="#">White List</a>
+            </li>
+            <li class="footer-nav-topic__item">
+              <a class="footer-nav-topic__link" href="#">Раунды пресейлов</a>
+            </li>
+            <li class="footer-nav-topic__item">
+              <a class="footer-nav-topic__link" href="#">Курc “Хакни трейдинг”</a>
+            </li>
+            <li class="footer-nav-topic__item">
+              <a class="footer-nav-topic__link" href="#">Лавка мерча и NFT</a>
+            </li>
+            <li class="footer-nav-topic__item">
+              <a class="footer-nav-topic__link" href="#">Функционал терминала Letit</a>
+            </li>
+          </ul>
+        </li>
+        <li class="footer-nav-topics__item footer-nav-topic">
+          <ul class="footer-nav-topic__list">
+            <li class="footer-nav-topic__item">
+              <a class="footer-nav-topic__link" href="#">FAQ</a>
+            </li>
+            <li class="footer-nav-topic__item">
+              <a class="footer-nav-topic__link" href="#">Криптословарь</a>
+            </li>
+            <li class="footer-nav-topic__item">
+              <a class="footer-nav-topic__link email" href="mailto:letit@letit.ap">letit@letit.ap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class="page-footer__social social social--footer">
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Twitter</span>
+            <svg width="35" height="27" viewBox="0 0 35 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M34.9178 3.1919C33.6423 3.74308 32.2896 4.1051 30.9045 4.26595C32.3653 3.41506 33.4588 2.07408 33.9807 0.493522C32.6075 1.28683 31.1055 1.84516 29.5396 2.14437C28.582 1.15186 27.3417 0.462275 25.9788 0.164582C24.616 -0.13311 23.193 -0.0252473 21.8935 0.474254C20.594 0.973754 19.4776 1.84197 18.6884 2.9669C17.8991 4.09182 17.4733 5.42183 17.4657 6.78533C17.4655 7.30725 17.5247 7.82758 17.6423 8.33673C14.8687 8.20391 12.1546 7.50381 9.67584 6.28176C7.19704 5.05971 5.00877 3.34297 3.25277 1.2427C2.36048 2.74383 2.08711 4.52035 2.48822 6.21119C2.88933 7.90203 3.93483 9.38032 5.41222 10.3456C4.31419 10.3057 3.24143 10.0127 2.2817 9.49034V9.57653C2.28198 11.1463 2.83564 12.6681 3.84967 13.8863C4.86369 15.1045 6.27628 15.9449 7.85008 16.2661C7.24994 16.4237 6.63126 16.504 6.0098 16.5048C5.56759 16.5033 5.12651 16.4611 4.6924 16.3788C5.14022 17.7329 6.00965 18.9167 7.17947 19.7653C8.3493 20.6138 9.76119 21.0848 11.2183 21.1126C8.74537 23.0084 5.69068 24.036 2.54654 24.0298C1.99062 24.0292 1.43518 23.9982 0.882812 23.937C4.0745 25.941 7.79019 27.0045 11.585 27C24.433 27 31.4817 16.6109 31.4817 7.60081C31.4817 7.30909 31.4817 7.01074 31.4817 6.71903C32.831 5.75017 33.9943 4.5561 34.9178 3.1919Z" fill="currentColor"/>
+              </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Telegram</span>
+            <svg width="33" height="28" viewBox="0 0 33 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M31.8827 0.385334C31.5531 0.162162 31.167 0.0287579 30.7651 -0.000809248C30.3633 -0.0303764 29.9606 0.0449888 29.5995 0.217339C28.6615 0.581329 3.22621 11.081 2.1864 11.508C2.00462 11.571 0.354012 12.166 0.528525 13.482C0.62178 13.8819 0.820719 14.2518 1.10607 14.5559C1.39143 14.86 1.75353 15.0881 2.15732 15.2179L8.62885 17.3179C9.05786 18.7178 10.6358 23.7647 10.9848 24.8497C11.2029 25.5497 11.5592 26.4106 12.1846 26.5926C12.4276 26.6805 12.6907 26.7041 12.9464 26.661C13.2021 26.6179 13.4412 26.5097 13.6388 26.3476L17.5945 22.8477L23.9788 27.6356L24.1314 27.7266C24.5216 27.9002 24.9451 27.9932 25.3749 27.9996C25.676 27.9991 25.9744 27.9445 26.2547 27.8386C26.8757 27.5686 27.3687 27.0839 27.6363 26.4806L32.3845 2.62527C32.6753 1.35131 32.2681 0.700326 31.8827 0.385334ZM14.3296 18.1999L12.1482 23.7997L9.96679 16.7999L26.691 4.90021L14.3296 18.1999Z" fill="currentColor"/>
+              </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Instagram</span>
+            <svg width="30" height="29" viewBox="0 0 30 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.6448 0H9.42876C6.9503 0.000576413 4.57349 0.955359 2.82081 2.65447C1.06813 4.35358 0.0830226 6.65795 0.0820315 9.06105V19.9353C0.0817369 21.1256 0.32328 22.3043 0.792865 23.4041C1.26245 24.5038 1.95088 25.5031 2.81883 26.3449C3.68679 27.1866 4.71726 27.8544 5.85141 28.3099C6.98555 28.7655 8.20115 29 9.42876 29H20.6448C22.4938 28.9995 24.3012 28.4676 25.8384 27.4713C27.3756 26.4751 28.5737 25.0593 29.2812 23.403C29.7502 22.3032 29.9916 21.1247 29.9916 19.9346V9.06178C29.9914 6.65838 29.0065 4.35348 27.2537 2.65409C25.5009 0.954697 23.1236 -7.69088e-09 20.6448 0V0ZM27.1883 19.9353C27.1884 20.7684 27.0192 21.5934 26.6905 22.3631C26.3617 23.1328 25.8798 23.8322 25.2722 24.4212C24.6646 25.0103 23.9433 25.4776 23.1495 25.7964C22.3557 26.1152 21.5048 26.2792 20.6456 26.2791H9.42876C7.69346 26.2791 6.02922 25.6107 4.8021 24.4211C3.57499 23.2314 2.8855 21.6179 2.8853 19.9353V9.06032C2.8853 8.22729 3.05454 7.40241 3.38335 6.63279C3.71216 5.86317 4.19411 5.16389 4.80167 4.57487C5.40922 3.98586 6.13049 3.51865 6.92429 3.19993C7.71808 2.8812 8.56885 2.7172 9.42802 2.7173H20.6448C22.3801 2.71749 24.0442 3.38589 25.2713 4.57551C26.4984 5.76513 27.1879 7.37858 27.1883 9.06105V19.9353Z" fill="currentColor"/>
+              <path d="M15.0365 7.24992C13.9308 7.24989 12.8389 7.48754 11.8392 7.94578C10.8396 8.40402 9.95725 9.07144 9.2556 9.9C8.55394 10.7286 8.05047 11.6976 7.78143 12.7375C7.51239 13.7773 7.48448 14.8621 7.69969 15.9137C7.9153 16.9654 8.36883 17.9577 9.02761 18.8189C9.6864 19.6802 10.534 20.3891 11.5094 20.8945C12.4848 21.3999 13.5637 21.6892 14.6683 21.7416C15.7729 21.794 16.8757 21.6081 17.8974 21.1975C19.4952 20.5554 20.814 19.3961 21.6292 17.917C22.4444 16.4379 22.7056 14.7306 22.3682 13.0858C22.0308 11.4409 21.1158 9.9604 19.7789 8.89631C18.4421 7.83221 16.7661 7.25038 15.0365 7.24992ZM15.0365 19.0283C14.1123 19.0278 13.2089 18.7617 12.4407 18.2635C11.6724 17.7653 11.0738 17.0574 10.7204 16.2294C10.3671 15.4013 10.2749 14.4903 10.4555 13.6114C10.6361 12.7326 11.0815 11.9254 11.7352 11.2919C12.389 10.6585 13.2218 10.2272 14.1283 10.0526C15.0348 9.87801 15.9744 9.96797 16.8282 10.3111C17.682 10.6542 18.4117 11.2351 18.925 11.9803C19.4384 12.7256 19.7123 13.6016 19.7121 14.4977C19.7107 15.6995 19.2176 16.8516 18.341 17.7011C17.4644 18.5507 16.2759 19.0282 15.0365 19.029V19.0283ZM23.0747 7.67187C23.3389 7.67187 23.5924 7.57009 23.7792 7.38892C23.9661 7.20775 24.0711 6.96202 24.0711 6.70581C24.0711 6.44959 23.9661 6.20387 23.7792 6.0227C23.5924 5.84153 23.3389 5.73975 23.0747 5.73975C22.8104 5.73975 22.557 5.84153 22.3702 6.0227C22.1833 6.20387 22.0783 6.44959 22.0783 6.70581C22.0783 6.96202 22.1833 7.20775 22.3702 7.38892C22.557 7.57009 22.8104 7.67187 23.0747 7.67187Z" fill="currentColor"/>
+              </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Linkedin</span>
+            <svg width="32" height="29" viewBox="0 0 32 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M27.111 0H5.00373C3.83326 0.00287061 2.7116 0.439943 1.88395 1.21568C1.0563 1.99141 0.589977 3.0427 0.586914 4.13975L0.586914 24.8603C0.589977 25.9573 1.0563 27.0086 1.88395 27.7843C2.7116 28.5601 3.83326 28.9971 5.00373 29H27.111C28.2815 28.9971 29.4031 28.5601 30.2308 27.7843C31.0584 27.0086 31.5248 25.9573 31.5278 24.8603V4.13975C31.5248 3.0427 31.0584 1.99141 30.2308 1.21568C29.4031 0.439943 28.2815 0.00287061 27.111 0ZM9.61083 24.1657H4.45376V10.8757H9.61161V24.1657H9.61083ZM7.03191 9.3032C5.48641 9.3032 4.45298 8.33533 4.45298 7.1282C4.45298 5.80145 5.48641 4.8343 7.03191 4.8343C8.57818 4.8343 9.61083 5.80218 9.61083 7.0093C9.61083 8.33605 8.57818 9.30393 7.03191 9.30393V9.3032ZM27.6602 24.1657H22.5024V16.9172C22.5024 14.9814 21.083 14.5 20.6985 14.5C20.3148 14.5 18.6355 14.7414 18.6355 16.9172V24.1657H13.4777V10.8757H18.6355V12.8093C19.4106 11.7204 20.6985 10.8757 23.1467 10.8757C25.5949 10.875 27.6602 12.6868 27.6602 16.9172V24.1657Z" fill="currentColor"/>
+              </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Youtube</span>
+            <svg width="31" height="29" viewBox="0 0 31 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.687 1.90606e-06C3.21902 -0.00028404 2.75557 0.0888773 2.32316 0.262387C1.89075 0.435897 1.49785 0.690352 1.16694 1.0112C0.836026 1.33205 0.573591 1.713 0.394639 2.13226C0.215687 2.55152 0.123729 3.00088 0.124024 3.45463V25.5454C0.123729 25.9991 0.215687 26.4485 0.394639 26.8677C0.573591 27.287 0.836026 27.668 1.16694 27.9888C1.49785 28.3096 1.89075 28.5641 2.32316 28.7376C2.75557 28.9111 3.21902 29.0003 3.687 29H26.4706C26.9386 29.0005 27.4022 28.9114 27.8347 28.738C28.2672 28.5646 28.6601 28.3101 28.9911 27.9892C29.322 27.6683 29.5845 27.2873 29.7634 26.868C29.9422 26.4486 30.0341 25.9992 30.0336 25.5454V3.45463C30.0341 3.00082 29.9422 2.55138 29.7634 2.13203C29.5845 1.71269 29.322 1.33166 28.9911 1.01077C28.6601 0.689888 28.2672 0.43544 27.8347 0.261998C27.4022 0.088556 26.9386 -0.000475027 26.4706 1.90606e-06H3.687ZM7.96107 2.76153H9.66965L10.8092 5.52233L11.948 2.76153H13.6588L11.5181 7.59438V10.3566H10.0936V7.58858C9.66592 6.4757 8.2482 3.45463 7.95659 2.76153H7.96107ZM15.0788 4.83358C15.388 4.81776 15.6971 4.86814 15.984 4.98116C16.2708 5.09419 16.5286 5.26706 16.7388 5.48753C17.0453 5.82755 17.2158 6.37203 17.2158 7.08978V8.0997C17.2158 8.81745 17.0738 9.3148 16.7747 9.65265C16.5607 9.87896 16.2996 10.0587 16.0087 10.1799C15.7178 10.3011 15.4036 10.3611 15.087 10.3559C14.7701 10.363 14.4554 10.3039 14.1642 10.1825C13.873 10.0612 13.6121 9.88045 13.3994 9.65265C13.0935 9.3148 12.9433 8.81745 12.9433 8.0997V7.09775C12.9433 6.38 13.1078 5.82755 13.4211 5.48825C13.8129 5.01918 14.3595 4.83358 15.0788 4.83358ZM17.9269 4.83358H19.3529V8.97768C19.3814 9.0643 19.4401 9.1386 19.519 9.18781C19.5979 9.23702 19.6919 9.25808 19.7851 9.24738C20.0782 9.24738 20.4476 8.91605 20.7766 8.54993V4.83358H22.201V10.3559H20.7743V9.40325C20.1963 9.9499 19.7051 10.3588 19.0575 10.3385C18.5864 10.324 18.2597 10.158 18.0952 9.82665C17.9658 9.52235 17.9076 9.19403 17.9247 8.8653L17.9269 4.8343V4.83358ZM15.0788 5.95008C14.9834 5.9503 14.8891 5.97007 14.8021 6.00808C14.6723 6.06358 14.5618 6.15429 14.4839 6.26929C14.4061 6.38428 14.3641 6.51866 14.3632 6.65623V8.59488C14.3636 8.7816 14.4396 8.96071 14.5748 9.09368C14.6397 9.15746 14.717 9.20822 14.8021 9.24303C14.8891 9.28096 14.9834 9.30058 15.0788 9.30058C15.1742 9.30058 15.2685 9.28096 15.3555 9.24303C15.4853 9.1878 15.5958 9.0971 15.6733 8.98199C15.7509 8.86689 15.7922 8.73237 15.7921 8.59488V6.6555C15.7931 6.47049 15.7188 6.29258 15.5852 6.16047C15.4516 6.02836 15.2696 5.95275 15.0788 5.95008ZM15.0788 12.4279C15.0788 12.4279 19.8568 12.4279 23.0489 12.6491C23.4961 12.6984 24.4667 12.7042 25.3355 13.5676C26.019 14.218 26.2388 15.7086 26.2388 15.7086C26.4063 16.6344 26.4841 17.5733 26.4706 18.5129V20.1492C26.4848 21.0889 26.4077 22.0278 26.2403 22.9535C26.2403 22.9535 26.0294 24.4448 25.3378 25.0951C24.4681 25.9579 23.4983 25.9651 23.0512 26.0137C19.8591 26.2348 15.0743 26.2407 15.0743 26.2407C15.0743 26.2407 9.14848 26.1855 7.32624 26.0195C6.82002 25.9296 5.68122 25.9586 4.8116 25.1017C4.12816 24.4448 3.90833 22.9535 3.90833 22.9535C3.7438 22.0271 3.66969 21.0877 3.687 20.1477V18.5107C3.67204 17.5711 3.74981 16.6329 3.9173 15.7071C3.9173 15.7071 4.12816 14.2158 4.81982 13.5655C5.68944 12.7027 6.65926 12.6955 7.10641 12.6469C10.294 12.4279 15.0788 12.4279 15.0788 12.4279ZM5.81955 15.1916V16.5575H7.24399V23.4777H8.66993V16.5575H10.0936V15.1916H5.81955ZM15.0788 15.1916V23.4777H16.5025V22.6142C16.9519 23.1521 17.5389 23.4769 18.0174 23.4769C18.2797 23.4858 18.5377 23.4104 18.7513 23.2625C18.965 23.1147 19.1223 22.9026 19.1988 22.6591C19.311 22.2792 19.3633 21.8848 19.3529 21.489V19.5931C19.3617 19.0916 19.2993 18.5912 19.1674 18.1061C19.0992 17.8618 18.9493 17.6463 18.7412 17.4934C18.5331 17.3406 18.2785 17.259 18.0174 17.2615C17.319 17.2615 17.0364 17.6066 16.5025 18.2127V15.1916H15.0788ZM10.0936 17.2615V21.8776C10.0787 22.2357 10.1347 22.5932 10.2581 22.931C10.3345 23.1053 10.4655 23.2519 10.6326 23.35C10.7997 23.4481 10.9944 23.4928 11.1891 23.4777C11.7095 23.4777 12.381 23.1217 12.9418 22.5344V23.4769H14.3655V17.2622H12.9418V21.5919C12.6292 22.0016 12.1716 22.2952 11.8874 22.2952C11.8013 22.3052 11.7145 22.2822 11.6456 22.2312C11.5766 22.1801 11.5309 22.1051 11.5181 22.0219V17.2622L10.0936 17.2615ZM22.2219 17.2615C21.9105 17.2463 21.5993 17.2949 21.3085 17.4041C21.0178 17.5133 20.754 17.6806 20.5343 17.8952C20.2367 18.1997 20.0617 18.6999 20.0617 19.3452V21.4549C20.0617 22.0987 20.2539 22.5489 20.5507 22.8491C20.9583 23.2587 21.5168 23.4632 22.2533 23.4632C22.9899 23.4632 23.5656 23.2457 23.9537 22.8063C24.1212 22.62 24.2349 22.3945 24.2827 22.1516C24.3159 21.8991 24.3334 21.6449 24.3351 21.3904H22.9114V21.9436C22.882 22.1062 22.7944 22.2537 22.664 22.3599C22.5336 22.4661 22.3687 22.5244 22.1984 22.5244C22.0281 22.5244 21.8632 22.4661 21.7328 22.3599C21.6024 22.2537 21.5148 22.1062 21.4854 21.9436V20.6987H24.3358V19.3038C24.3358 18.6579 24.1713 18.1852 23.8774 17.872C23.6618 17.6623 23.4028 17.4994 23.1174 17.394C22.832 17.2887 22.5268 17.244 22.2219 17.2615ZM22.201 18.262C22.3742 18.2491 22.5457 18.3024 22.6789 18.4105C22.8121 18.5186 22.8963 18.673 22.9136 18.8406V19.7591H21.4877V18.8406C21.5047 18.6727 21.589 18.518 21.7224 18.4097C21.8557 18.3014 22.0276 18.2489 22.201 18.262ZM17.3721 18.4657C17.7602 18.4657 17.9269 18.6977 17.9269 19.4169V21.3172C17.9269 22.0371 17.7602 22.2872 17.3721 22.2872C17.0488 22.2603 16.7435 22.1317 16.5025 21.9211V18.9007C16.7409 18.6749 17.0439 18.5238 17.3721 18.4672V18.4657Z" fill="currentColor"/>
+              </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="#">
+            <span class="visually-hidden">Reddit</span>
+            <svg width="36" height="31" viewBox="0 0 36 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.2071 0C19.6013 0 17.7292 1.21786 17.4477 6.64286C17.6912 6.64286 17.9195 6.64286 18.163 6.64286H18.9697C19.1523 3.39524 19.959 1.47619 21.2071 1.47619C21.7398 1.47619 22.0442 1.75667 22.6073 2.35452C23.4174 3.33737 24.5513 4.02015 25.8188 4.28833C25.792 4.09004 25.7767 3.89044 25.7732 3.69048C25.7726 3.38812 25.8032 3.08647 25.8645 2.79C25.016 2.53892 24.2688 2.0386 23.726 1.3581C23.4385 0.96259 23.0626 0.635081 22.6265 0.399945C22.1904 0.164809 21.7052 0.028102 21.2071 0ZM30.3392 0.738095C29.7372 0.738095 29.1486 0.911249 28.648 1.23566C28.1475 1.56007 27.7573 2.02117 27.5269 2.56065C27.2965 3.10013 27.2362 3.69375 27.3537 4.26646C27.4711 4.83916 27.761 5.36523 28.1868 5.77812C28.6125 6.19102 29.1549 6.47221 29.7454 6.58613C30.3359 6.70005 30.9479 6.64158 31.5041 6.41812C32.0604 6.19466 32.5358 5.81625 32.8703 5.33073C33.2048 4.84521 33.3833 4.2744 33.3833 3.69048C33.3833 2.90746 33.0626 2.15651 32.4917 1.60283C31.9208 1.04915 31.1466 0.738095 30.3392 0.738095ZM18.163 8.11905C8.93194 8.11905 1.42074 12.6805 1.42074 19.1905C1.42074 25.7005 8.93194 31 18.163 31C27.3941 31 34.9053 25.7005 34.9053 19.1905C34.9053 12.6805 27.3941 8.11905 18.163 8.11905ZM4.8453 8.81286C3.72643 8.82126 2.65655 9.25915 1.86974 10.0307C1.2523 10.6194 0.840316 11.3808 0.691557 12.2081C0.542798 13.0354 0.664722 13.8871 1.04023 14.6438C2.35291 12.3446 4.3392 10.4746 6.74783 9.27048C6.15913 8.97612 5.50759 8.81941 4.8453 8.81286ZM31.4808 8.81286C30.8262 8.82283 30.1829 8.97945 29.601 9.27048C32.0012 10.4782 33.9792 12.3478 35.2858 14.6438C35.6613 13.8871 35.7832 13.0354 35.6345 12.2081C35.4857 11.3808 35.0737 10.6194 34.4563 10.0307C33.6695 9.25915 32.5996 8.82126 31.4808 8.81286ZM12.0749 14.7619C12.5265 14.7619 12.9679 14.8918 13.3433 15.1351C13.7188 15.3784 14.0114 15.7242 14.1842 16.1288C14.357 16.5334 14.4022 16.9786 14.3141 17.4082C14.226 17.8377 14.0086 18.2323 13.6893 18.5419C13.37 18.8516 12.9632 19.0625 12.5203 19.1479C12.0775 19.2334 11.6184 19.1895 11.2012 19.0219C10.7841 18.8543 10.4275 18.5705 10.1766 18.2064C9.92578 17.8422 9.79188 17.4141 9.79188 16.9762C9.79188 16.3889 10.0324 15.8257 10.4606 15.4105C10.8887 14.9952 11.4694 14.7619 12.0749 14.7619ZM24.2511 14.7619C24.7027 14.7619 25.1441 14.8918 25.5195 15.1351C25.895 15.3784 26.1876 15.7242 26.3604 16.1288C26.5332 16.5334 26.5784 16.9786 26.4903 17.4082C26.4022 17.8377 26.1848 18.2323 25.8655 18.5419C25.5462 18.8516 25.1394 19.0625 24.6965 19.1479C24.2537 19.2334 23.7946 19.1895 23.3774 19.0219C22.9603 18.8543 22.6037 18.5705 22.3528 18.2064C22.102 17.8422 21.9681 17.4141 21.9681 16.9762C21.9681 16.3889 22.2086 15.8257 22.6368 15.4105C23.0649 14.9952 23.6456 14.7619 24.2511 14.7619ZM11.3596 22.881C11.4599 22.8963 11.556 22.931 11.6422 22.983C11.7285 23.035 11.8032 23.1032 11.8618 23.1836C11.9379 23.2869 13.7263 25.6045 18.163 25.6045C22.5997 25.6045 24.449 23.2279 24.4642 23.2057C24.5213 23.1243 24.5947 23.0547 24.6799 23.0012C24.7652 22.9477 24.8606 22.9112 24.9606 22.894C25.0606 22.8769 25.1632 22.8792 25.2622 22.9011C25.3612 22.9229 25.4547 22.9638 25.5372 23.0212C25.6946 23.136 25.8 23.3055 25.8312 23.494C25.8624 23.6826 25.8171 23.8756 25.7047 24.0324C25.6133 24.1579 23.4216 27.0807 18.163 27.0807C12.9044 27.0807 10.7127 24.1283 10.6214 24.0324C10.509 23.8756 10.4636 23.6826 10.4949 23.494C10.5261 23.3055 10.6314 23.136 10.7888 23.0212C10.8696 22.9622 10.9616 22.9194 11.0596 22.8954C11.1576 22.8713 11.2596 22.8664 11.3596 22.881Z" fill="currentColor"/>
+              </svg>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__social-text">Подписывайтесь на открытые каналы Letit, каждый день что-то происходит</p>
+
+      <p class="page-footer__copyright">Все права защищены, любое копирование или цитирование контента LETIT допустимо с разрешения</p>
+
+    </div>
+  </footer>
+  <script src="lib/lottie.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

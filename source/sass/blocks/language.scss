@@ -1,0 +1,21 @@
+.language {
+  display: block;
+  padding: 8px;
+
+  font-family: $font-title;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+
+  text-decoration: none;
+
+  color: $color-primary;
+
+  &:hover {
+    color: $color-primary-3;
+  }
+
+  &:active {
+    color: $color-primary-2;
+  }
+}

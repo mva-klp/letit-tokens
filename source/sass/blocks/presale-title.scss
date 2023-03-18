@@ -1,0 +1,25 @@
+.presale-title {
+  margin: 0;
+
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 60px;
+  text-transform: uppercase;
+  color: $color-white;
+}
+
+.presale-title__end-text {
+  vertical-align: text-bottom;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 70px;
+  color: $color-primary-2;
+}
+
+.presale-title__end-text--public {
+  color: $color-primary;
+}
+
+.presale-title__star {
+  vertical-align: sub;
+}

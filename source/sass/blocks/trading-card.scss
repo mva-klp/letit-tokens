@@ -1,0 +1,342 @@
+.trading-card {
+  position: relative;
+  background-color: $color-white;
+  width: 350px;
+  text-align: center;
+}
+
+.trading-card__header {
+  position: relative;
+  z-index: 3;
+  padding: 23px;
+  padding-left: 33px;
+
+  background-color: $bg-color-1;
+  border-radius: 40px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    width: 152px;
+    height: 152px;
+    display: block;
+    top: -25px;
+    left: -3px;
+    border: 2px solid $color-black;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    width: 102px;
+    height: 102px;
+    display: block;
+    top: 0;
+    left: 23px;
+    border-radius: 50%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+  }
+}
+
+.trading-card__title {
+  margin: 0;
+  margin-bottom: 3px;
+  text-align: right;
+
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 52px;
+}
+
+.trading-card__cost {
+  margin: 0;
+  text-align: right;
+
+  font-family: $font-body;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  color: $color-white;
+}
+
+.trading-card__subcost {
+  margin: 0;
+  margin-bottom: 17px;
+  text-align: right;
+
+  font-family: $font-body;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 18px;
+
+  color: $color-white;
+}
+
+.trading-card__lead {
+  margin: 0;
+  font-family: $font-body;
+  display: grid;
+  text-align: left;
+}
+
+.trading-card__lead-title {
+  margin: 0;
+  margin-bottom: 3px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-white;
+}
+
+.trading-card__lead-description {
+  margin: 0;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.trading-card__content {
+  display: grid;
+  grid-template-rows: min-content;
+
+  position: relative;
+  z-index: 2;
+  padding: 67px 10px 21px 37px;
+  margin-top: -45px;
+
+  min-height: 500px;
+
+  text-align: left;
+
+  background-color: $color-white;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.trading-card__content-title {
+  margin: 0;
+  margin-bottom: 4px;
+
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 46px;
+}
+
+.trading-card__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: grid;
+  grid-template-rows: min-content min-content 0.4fr 0.6fr;
+}
+
+.trading-card__item:nth-child(2) {
+  min-height: 112px;
+}
+
+.trading-card__item-title {
+  margin: 0;
+  font-family: $font-body;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.trading-card__item-note {
+  margin-top: -2px;
+  font-family: $font-body;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 12px;
+}
+
+.trading-card__sublist {
+  padding-left: 25px;
+  list-style-type: disc;
+}
+
+.trading-card__subitem {
+  font-family: $font-body;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.trading-card__footer {
+  position: relative;
+  z-index: 1;
+  margin-top: -45px;
+  padding-top: 48px;
+
+  color: $color-white;
+  text-align: center;
+
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.trading-card__profit-title {
+  margin: 0;
+  font-family: $font-body;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.trading-card__profit {
+  margin: 0;
+  font-family: $font-title;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 58px;
+}
+
+.trading-card__buttons-container {
+  margin: 0 auto;
+  margin-top: 39px;
+  display: grid;
+  gap: 21px;
+  width: 324px;
+}
+
+.trading-card--dolphin {
+  color: $color-primary-3;
+
+  .trading-card__header {
+    background-color: $bg-color-1;
+    border: 2px solid $color-primary-3;
+
+    &::before {
+      border-color: $color-primary-3;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-image:
+        url("../img/card-icons/dolphin-circle.png");
+    }
+
+    &::after {
+      background-color: $color-primary-3;
+      background-image:
+        url("../img/card-icons/dolphin-card.svg");
+    }
+  }
+
+  .trading-card__title{
+    color: $color-primary;
+  }
+
+  .trading-card__lead-title {
+    color: $color-primary;
+  }
+
+  .trading-card__content {
+    border: 2px solid $color-primary-3;
+  }
+
+  .trading-card__footer {
+    background-color: $color-primary-3;
+  }
+
+  .trading-card__button {
+    color: $color-primary-3;
+    border: 2px solid $color-primary-3;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary-3;
+    }
+  }
+}
+
+.trading-card--shark {
+  color: $color-primary-2;
+
+  .trading-card__header {
+    background-color: $bg-color-2;
+    border: 2px solid $color-primary-2;
+
+    &::before {
+      border-color: $color-primary-2;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-image:
+        url("../img/card-icons/shark-circle.png");
+    }
+
+    &::after {
+      background-color: $color-primary-2;
+      background-image:
+        url("../img/card-icons/shark-card.svg");
+    }
+  }
+
+  .trading-card__content {
+    border: 2px solid $color-primary-2;
+  }
+
+  .trading-card__footer {
+    background-color: $color-primary-2;
+  }
+
+  .trading-card__button {
+    color: $color-primary-2;
+    border: 2px solid $color-primary-2;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary-2;
+    }
+  }
+}
+
+.trading-card--whale {
+  color: $color-primary;
+
+  .trading-card__header {
+    border: 2px solid $color-primary;
+    background-color: $bg-color-3;
+
+    &::before {
+      border-color: $color-primary;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-image:
+        url("../img/card-icons/whale-circle.png");
+    }
+
+    &::after {
+      background-color: $color-primary;
+      background-image:
+        url("../img/card-icons/whale-card.svg");
+    }
+  }
+
+  .trading-card__content {
+    border: 2px solid $color-primary;
+  }
+
+  .trading-card__footer {
+    background-color: $color-primary;
+  }
+
+  .trading-card__button {
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &:hover {
+      color: $color-white;
+      background-color: $color-primary;
+    }
+  }
+}

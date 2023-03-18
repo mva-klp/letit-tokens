@@ -1,0 +1,25 @@
+.footer-nav-topic__list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.footer-nav-topic__link {
+  color: $color-primary;
+  font-family: $font-body;
+  font-weight: 400;
+  text-decoration: none;
+
+  &:hover {
+    color: $color-primary-3
+  }
+
+  &:active {
+    color: $color-primary-2;
+  }
+}
+
+.footer-nav-topics__item:nth-child(2) .footer-nav-topic__item:last-child {
+  margin-top: 24px;
+}

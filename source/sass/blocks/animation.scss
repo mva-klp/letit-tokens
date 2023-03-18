@@ -1,0 +1,13 @@
+.animation--js {
+  .animation__image {
+    display: none;
+  }
+}
+
+.animation__image--flower {
+  @media (min-width: $wide-desktop-width) {
+    width: 494px;
+    height: 697px;
+  }
+
+}
