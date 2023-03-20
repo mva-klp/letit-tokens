@@ -95,19 +95,6 @@
   }
 }
 
-.accordion__item--js[open] {
-  @media (max-width: $mobile-width-only) {
-    position: fixed;
-    display: block;
-    left: 0;
-    right: 0;
-    top: 86px;
-    height: calc(100% - 86px);
-    z-index: 7;
-    overflow-y: scroll;
-  }
-}
-
 .accordion__item--loyalty {
   color: $color-white;
   background-color: $color-primary;
@@ -120,6 +107,19 @@
         display: none;
       }
     }
+  }
+}
+
+.accordion__item--js[open] {
+  @media (max-width: $mobile-width-only) {
+    position: fixed;
+    display: block;
+    left: 0;
+    right: 0;
+    top: 86px;
+    height: calc(100% - 86px);
+    z-index: 7;
+    overflow-y: scroll;
   }
 }
 
@@ -294,5 +294,3 @@
     padding-right: 63px;
   }
 }
-
-
